@@ -1,0 +1,15 @@
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.deps.json
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.Entity.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.AssemblyInfo.cs
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.CopyComplete
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\refint\AgileSolutions.DataAccess.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\ref\AgileSolutions.DataAccess.dll

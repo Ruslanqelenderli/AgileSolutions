@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model List<AgileSolutions.UI.ViewModels.DepartmentViewModels.DepartmentGetViewModel>
+@if(TempData["DeletedMessage"]!=null){
+    <div class="alert alert-success" role="alert">
+        @TempData["DeletedMessage"]
+    </div>
+    TempData["DeletedMessage"] = null;
+}
+else if (TempData["AddedMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["AddedMessage"]
+    </div>
+    TempData["AddedMessage"] = null;
+}else if (TempData["UpdatedMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["UpdatedMessage"]
+    </div>
+    TempData["UpdatedMessage"] = null;
+}
+
+    
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int count = 1;
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@count</th>
+                            <td>@item.Name</td>
+                            <td><a href="/Department/Update/@item.Id">Edit</a></td>
+                            <td><a href="/Department/Delete/@item.Id">Remove</a></td>
+                        </tr>
+                        count++;
+                    }
+                }
+
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="/Department/Add" role="button">Add</a>
+   

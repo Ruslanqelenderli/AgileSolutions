@@ -1,0 +1,17 @@
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.Business.deps.json
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.Business.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.Business.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.csproj.AssemblyReference.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.AssemblyInfoInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.AssemblyInfo.cs
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\refint\AgileSolutions.Business.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\ref\AgileSolutions.Business.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.DataAccess.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.Entity.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.DataAccess.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\bin\Debug\net6.0\AgileSolutions.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Business\obj\Debug\net6.0\AgileSolutions.Business.csproj.CopyComplete

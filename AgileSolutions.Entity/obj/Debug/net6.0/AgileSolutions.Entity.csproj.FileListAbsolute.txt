@@ -1,0 +1,12 @@
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\bin\Debug\net6.0\AgileSolutions.Entity.deps.json
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\bin\Debug\net6.0\AgileSolutions.Entity.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\bin\Debug\net6.0\AgileSolutions.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.csproj.AssemblyReference.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.AssemblyInfoInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.AssemblyInfo.cs
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\refint\AgileSolutions.Entity.dll
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\AgileSolutions.Entity.pdb
+C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.Entity\obj\Debug\net6.0\ref\AgileSolutions.Entity.dll
