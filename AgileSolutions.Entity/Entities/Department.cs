@@ -17,6 +17,8 @@ namespace AgileSolutions.Entity.Entities
         {
 
         }
+        public int? ParentDepartmentId { get; set; }
+        public Department ParentDepartment { get; set; }
         public string Name { get; set; }
         public ICollection<Employee> Employees { get; set; }
     }

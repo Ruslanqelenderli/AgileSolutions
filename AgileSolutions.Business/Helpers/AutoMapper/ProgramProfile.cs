@@ -19,7 +19,8 @@ namespace AgileSolutions.Business.Helpers.AutoMapper
             
 
             CreateMap<Department, DepartmentAddDto>().ReverseMap();
-            CreateMap<Department, DepartmentGetDto>().ReverseMap();
+            CreateMap<Department, DepartmentGetDto>()
+                .ForMember(x=>x.EmployeeGetDtos,opt=>opt.MapFrom(x=>x.Employees)).ReverseMap();
             CreateMap<Department, DepartmentUpdateDto>().ReverseMap();
             CreateMap<BusinessReturnResult<DepartmentGetDto>, DataAccessReturnResult<Department>>().ReverseMap();
 

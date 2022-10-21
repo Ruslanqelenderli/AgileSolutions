@@ -9,5 +9,6 @@ namespace AgileSolutions.Business.Concrete.Dtos.DepartmentDtos
     public class DepartmentAddDto
     {
         public string Name { get; set; }
+        public int? ParentDepartmentId { get; set; }
     }
 }

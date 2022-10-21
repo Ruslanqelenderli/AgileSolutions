@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgileSolutions.DataAccess.Migrations
 {
     [DbContext(typeof(AgileSolutionsDbContext))]
-    [Migration("20221018170644_Initial")]
+    [Migration("20221021115053_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,9 @@ namespace AgileSolutions.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ParentDepartmentId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("State")
                         .HasColumnType("bit");
 
@@ -50,13 +53,15 @@ namespace AgileSolutions.DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ParentDepartmentId");
+
                     b.ToTable("Department");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(631),
+                            CreatedDate = new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4681),
                             IsDeleted = false,
                             Name = "Information Technology",
                             State = true
@@ -64,7 +69,7 @@ namespace AgileSolutions.DataAccess.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(653),
+                            CreatedDate = new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4699),
                             IsDeleted = false,
                             Name = "Human Resource",
                             State = true
@@ -116,7 +121,7 @@ namespace AgileSolutions.DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(831),
+                            CreatedDate = new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4874),
                             DepartmentId = 1,
                             Email = "ruslan.galandarli@gmail.com",
                             IsDeleted = false,
@@ -127,7 +132,7 @@ namespace AgileSolutions.DataAccess.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(834),
+                            CreatedDate = new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4878),
                             DepartmentId = 2,
                             Email = "aslan.musayev@gmail.com",
                             IsDeleted = false,
@@ -135,6 +140,15 @@ namespace AgileSolutions.DataAccess.Migrations
                             State = true,
                             Surname = "Musayev"
                         });
+                });
+
+            modelBuilder.Entity("AgileSolutions.Entity.Entities.Department", b =>
+                {
+                    b.HasOne("AgileSolutions.Entity.Entities.Department", "ParentDepartment")
+                        .WithMany()
+                        .HasForeignKey("ParentDepartmentId");
+
+                    b.Navigation("ParentDepartment");
                 });
 
             modelBuilder.Entity("AgileSolutions.Entity.Entities.Employee", b =>

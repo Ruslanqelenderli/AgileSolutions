@@ -15,8 +15,11 @@ namespace AgileSolutions.UI.Controllers
             
         }
         
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
+            var url = "http://localhost:5094/departments/";
+            var response = await Api<DepartmentGetViewModel>.GetAsync(url);
+            ViewBag.Departments = response;
             return View();
         }
         [HttpPost]
@@ -24,6 +27,9 @@ namespace AgileSolutions.UI.Controllers
         {
             if (!ModelState.IsValid)
             {
+                var urldepartment = "http://localhost:5094/departments/";
+                var responsedepartment = await Api<DepartmentGetViewModel>.GetAsync(urldepartment);
+                ViewBag.Departments = responsedepartment;
                 return View(vm);
             }
             var url = "http://localhost:5094/department/add/";
@@ -40,6 +46,9 @@ namespace AgileSolutions.UI.Controllers
         {
             var url = $"http://localhost:5094/department/{id}/";
             var response = await Api<DepartmentUpdateViewModel>.GetAsync(url);
+            var urldepartment = "http://localhost:5094/departments/";
+            var responsedepartment = await Api<DepartmentGetViewModel>.GetAsync(urldepartment);
+            ViewBag.Departments = responsedepartment;
             return View(response.FirstOrDefault());
             
         }
@@ -48,6 +57,9 @@ namespace AgileSolutions.UI.Controllers
         {
             if (!ModelState.IsValid)
             {
+                var urldepartment = "http://localhost:5094/departments/";
+                var responsedepartment = await Api<DepartmentGetViewModel>.GetAsync(urldepartment);
+                ViewBag.Departments = responsedepartment;
                 return View(vm);
             }
             var url = "http://localhost:5094/department/update/";

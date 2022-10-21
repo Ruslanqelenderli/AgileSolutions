@@ -10,5 +10,6 @@ namespace AgileSolutions.UI.ViewModels.DepartmentViewModels
         [MaxLength(20, ErrorMessage = "Maximum 20 characters")]
         public string Name { get; set; }
         public bool State { get; set; }
+        public int? ParentDepartmentId { get; set; }
     }
 }

@@ -13,3 +13,20 @@ C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Deb
 C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\refint\AgileSolutions.DataAccess.dll
 C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.pdb
 C:\Users\Ruslan-PC\source\repos\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\ref\AgileSolutions.DataAccess.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.deps.json
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.pdb
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.Entity.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.Entity.pdb
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.AssemblyReference.cache
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.AssemblyInfoInputs.cache
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.AssemblyInfo.cs
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.CoreCompileInputs.cache
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.csproj.CopyComplete
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\refint\AgileSolutions.DataAccess.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.pdb
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\ref\AgileSolutions.DataAccess.dll
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\bin\Debug\net6.0\AgileSolutions.DataAccess.runtimeconfig.json
+D:\AgileProjets\interviews projects\AgileSolutions\AgileSolutions.DataAccess\obj\Debug\net6.0\AgileSolutions.DataAccess.genruntimeconfig.cache

@@ -28,6 +28,9 @@ namespace AgileSolutions.UI.Controllers
         {
             if (!ModelState.IsValid)
             {
+                var urldepartment = "http://localhost:5094/departments/";
+                var responsedepartment = await Api<DepartmentGetViewModel>.GetAsync(urldepartment);
+                ViewBag.Departments = responsedepartment;
                 return View(vm);
             }
             var url = "http://localhost:5094/employee/add/";

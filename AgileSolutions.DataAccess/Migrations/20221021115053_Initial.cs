@@ -15,6 +15,7 @@ namespace AgileSolutions.DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    ParentDepartmentId = table.Column<int>(type: "int", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     State = table.Column<bool>(type: "bit", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
@@ -24,6 +25,11 @@ namespace AgileSolutions.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Department", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Department_Department_ParentDepartmentId",
+                        column: x => x.ParentDepartmentId,
+                        principalTable: "Department",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -54,23 +60,28 @@ namespace AgileSolutions.DataAccess.Migrations
 
             migrationBuilder.InsertData(
                 table: "Department",
-                columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name", "State", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(631), false, "Information Technology", true, null });
+                columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name", "ParentDepartmentId", "State", "UpdatedDate" },
+                values: new object[] { 1, new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4681), false, "Information Technology", null, true, null });
 
             migrationBuilder.InsertData(
                 table: "Department",
-                columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name", "State", "UpdatedDate" },
-                values: new object[] { 2, new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(653), false, "Human Resource", true, null });
+                columns: new[] { "Id", "CreatedDate", "IsDeleted", "Name", "ParentDepartmentId", "State", "UpdatedDate" },
+                values: new object[] { 2, new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4699), false, "Human Resource", null, true, null });
 
             migrationBuilder.InsertData(
                 table: "Employee",
                 columns: new[] { "Id", "CreatedDate", "DepartmentId", "Email", "IsDeleted", "Name", "State", "Surname", "UpdatedDate" },
-                values: new object[] { 1, new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(831), 1, "ruslan.galandarli@gmail.com", false, "Ruslan", true, "Galandarli", null });
+                values: new object[] { 1, new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4874), 1, "ruslan.galandarli@gmail.com", false, "Ruslan", true, "Galandarli", null });
 
             migrationBuilder.InsertData(
                 table: "Employee",
                 columns: new[] { "Id", "CreatedDate", "DepartmentId", "Email", "IsDeleted", "Name", "State", "Surname", "UpdatedDate" },
-                values: new object[] { 2, new DateTime(2022, 10, 18, 21, 6, 44, 128, DateTimeKind.Local).AddTicks(834), 2, "aslan.musayev@gmail.com", false, "Aslan", true, "Musayev", null });
+                values: new object[] { 2, new DateTime(2022, 10, 21, 15, 50, 52, 265, DateTimeKind.Local).AddTicks(4878), 2, "aslan.musayev@gmail.com", false, "Aslan", true, "Musayev", null });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Department_ParentDepartmentId",
+                table: "Department",
+                column: "ParentDepartmentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Employee_DepartmentId",

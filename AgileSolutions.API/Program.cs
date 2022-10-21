@@ -12,7 +12,7 @@ var logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
     .Enrich.FromLogContext()
     .WriteTo.File(
-        System.IO.Path.Combine("C:\\Users\\Ruslan-PC\\source\\repos\\AgileSolutions\\AgileSolutions.Business\\Logs\\","Application", "diagnostic.txt"),
+        System.IO.Path.Combine("D:\\AgileProjets\\interviews projects\\AgileSolutions\\AgileSolutions.Business\\Logs\\", "Application", "diagnostic.txt"),
         rollingInterval: RollingInterval.Day,
         fileSizeLimitBytes: 10 * 1024 * 1024,
         retainedFileCountLimit: 30,

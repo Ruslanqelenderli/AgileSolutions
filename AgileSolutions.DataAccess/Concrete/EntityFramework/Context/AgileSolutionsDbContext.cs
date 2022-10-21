@@ -21,7 +21,7 @@ namespace AgileSolutions.DataAccess.Concrete.EntityFramework.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                connectionString: @"Server=DESKTOP-2A4NBF1;Database=AgileSolutionsDb;Trusted_Connection=True;Connect Timeout=40;MultipleActiveResultSets=True;"
+                connectionString: @"Server=localhost;Database=AgileSolutionsDb;Trusted_Connection=True;Connect Timeout=40;MultipleActiveResultSets=True;"
                 );
 
 
@@ -35,9 +35,14 @@ namespace AgileSolutions.DataAccess.Concrete.EntityFramework.Context
                 .HasOne(q => q.Department)
                 .WithMany(x => x.Employees)
                 .HasForeignKey(x => x.DepartmentId);
+            modelBuilder.Entity<Department>()
+                .HasKey(x => x.Id);
+                
+                
+
 
             modelBuilder.Entity<Department>().HasData(
-                new Department() { Id = 1, Name = "Information Technology", State = true, CreatedDate = DateTime.Now },
+                new Department() { Id = 1, Name = "Information Technology" ,State = true, CreatedDate = DateTime.Now },
                 new Department() { Id = 2, Name = "Human Resource", State = true, CreatedDate = DateTime.Now }
                 ); ;
             modelBuilder.Entity<Employee>().HasData(

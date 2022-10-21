@@ -23,7 +23,7 @@ namespace AgileSolutions.API.Controllers
         public async Task<IActionResult> Get()
         {
             logger.LogInformation("Start Get method in DepartmentController.");
-            var result = await departmentService.GetAllForStateAsync(true, "Employees");
+            var result = await departmentService.GetAllForStateAsync(true, "Employees","ParentDepartment");
 
             if (result.Status)
             {
@@ -97,7 +97,7 @@ namespace AgileSolutions.API.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             logger.LogInformation("Start GetById method in DepartmentController.");
-            var result = await departmentService.GetByIdAsync(id, "Employees");
+            var result = await departmentService.GetByIdAsync(id, "Employees","ParentDepartment");
             if (result.Status)
             {
                 logger.LogInformation(result.Message + " in DepartmentController GetById method");
